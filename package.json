@@ -1,0 +1,48 @@
+{
+  "name": "rest-full-api",
+  "version": "1.0.0",
+  "description": "simple restfull Api with typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alliano/contact-management-system-by-ts.git"
+  },
+  "author": "Alliano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alliano/contact-management-system-by-ts/issues"
+  },
+  "homepage": "https://github.com/alliano/contact-management-system-by-ts#readme",
+  "dependencies": {
+    "@prisma/client": "^5.12.0",
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "prisma": "^5.12.0",
+    "winston": "^3.13.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.24.3",
+    "@babel/preset-typescript": "^7.24.1",
+    "@jest/globals": "^29.7.0",
+    "@types/bcrypt": "^5.0.2",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.3",
+    "@types/supertest": "^6.0.2",
+    "@types/uuid": "^9.0.8",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4",
+    "ts-node": "^10.9.2",
+    "uuid": "^9.0.1"
+  }
+}

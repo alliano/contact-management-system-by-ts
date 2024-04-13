@@ -1,0 +1,15 @@
+version: '1.9'
+services:
+  mysql:
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=secreetPass
+      - MYSQL_USER=alliano-dev
+      - MYSQL_PASSWORD=secreetPass
+      - MYSQL_DATABASE=typescript_restfull_api
+    volumes:
+      - pg_volume:/var/lib/mysql
+volumes:
+  pg_volume : {}
