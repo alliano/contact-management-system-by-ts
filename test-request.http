@@ -1,0 +1,131 @@
+### REGISTER USER
+POST http://localhost:8000/api/users HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username": "allianoanonymous@gmail.com",
+    "name": "allia",
+    "password": "secreet_pass"
+}
+
+### LOGIN USER
+POST http://localhost:8000/api/users/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username": "allianoanonymous@gmail.com",
+    "password": "secreet_pass"
+}
+
+### GET CURRENT USER
+GET http://localhost:8000/api/users/current
+Accept: application/json
+X-API-TOKEN: 69232918-f112-4f80-9837-472365faf8e2
+
+
+### UPDATE USER
+PATCH  http://localhost:8000/api/users/current
+Accept: application/json
+Content-Type: application/json
+X-API-TOKEN: 69232918-f112-4f80-9837-472365faf8e2
+
+{
+    "name": "Abdillah Alli"
+}
+
+
+### LOGOUT USER
+DELETE  http://localhost:8000/api/users/current
+Accept: application/json
+X-API-TOKEN: 69232918-f112-4f80-9837-472365faf8e2
+
+### CREATE CONTACT
+POST http://localhost:8000/api/contacts HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+X-API-TOKEN: 69232918-f112-4f80-9837-472365faf8e2
+
+{
+    "first_name": "Allia",
+    "last_name": "Azahra",
+    "email": "azahra@gmail.com",
+    "phone": "+62832984055"
+}
+
+### UPDATE CONTACT
+PUT http://localhost:8000/api/contacts/409 HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+X-API-TOKEN: 69232918-f112-4f80-9837-472365faf8e2
+
+{
+    "first_name": "Audia Naila",
+    "last_name": "Safa",
+    "email": "alliaudia@gmail.com",
+    "phone": "+62832984053"
+}
+
+### GET CONTACT
+GET http://localhost:8000/api/contacts/409 HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+X-API-TOKEN: 69232918-f112-4f80-9837-472365faf8e2
+
+### DELETE CONTACT
+DELETE http://localhost:8000/api/contacts/408 HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+X-API-TOKEN: 69232918-f112-4f80-9837-472365faf8e2
+
+### SEARCH CONTACT
+GET http://localhost:8000/api/contacts?size=1&page=1 HTTP/1.1
+Accept: application/json
+X-API-TOKEN: 69232918-f112-4f80-9837-472365faf8e2
+
+### SEARCH CONTACT
+GET http://localhost:8000/api/contacts?name=azahra HTTP/1.1
+Accept: application/json
+X-API-TOKEN: 69232918-f112-4f80-9837-472365faf8e2
+
+
+### CREATE ADDRESS
+POST  http://localhost:8000/api/contacts/411/addresses HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+X-API-TOKEN: 69232918-f112-4f80-9837-472365faf8e2
+ 
+{
+    "street": "Al-Kausar",
+    "city": "Atlantis",
+    "province": "Gaib",
+    "country": "Uhud",
+    "postal_code": "9900"
+}
+
+### GET ADDRESS
+GET  http://localhost:8000/api/contacts/411/addresses HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+X-API-TOKEN: 69232918-f112-4f80-9837-472365faf8e2
+
+### UPDATE ADDRESS
+PUT  http://localhost:8000/api/contacts/411/addresses/154 HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+X-API-TOKEN: 69232918-f112-4f80-9837-472365faf8e2
+ 
+{
+    "street": "Al-MULK",
+    "city": "ASGARD",
+    "province": "mustang",
+    "country": "Uhud",
+    "postal_code": "9911"
+}
+
+### LIST ADDRESS
+GET http://localhost:8000/api/contacts/411/addresses HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+X-API-TOKEN: 69232918-f112-4f80-9837-472365faf8e2

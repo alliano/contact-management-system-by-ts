@@ -7,6 +7,8 @@ export class UserController {
     public static async register(req: Request, resp: Response, next: NextFunction): Promise<void> {
         try{
             const request: CreateUserRequest = req.body as CreateUserRequest;
+            console.log(request);
+            
             const response: UserResponse = await UserService.register(request);
             resp.status(201).json({
                 data: response

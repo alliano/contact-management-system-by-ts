@@ -21,7 +21,6 @@ export const connection = new PrismaClient({
         }
     ]
 });
-
 connection.$on("error", (e) => {
     Winston.getLogger().error(e);
 })

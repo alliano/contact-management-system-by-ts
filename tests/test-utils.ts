@@ -1,9 +1,11 @@
-import { Contact, User } from "@prisma/client";
+import { Address, Contact, User } from "@prisma/client";
 import { connection } from "../src/application/databases";
 import bcrypt from "bcrypt";
+import { ErrorResponse } from "../src/errors/error-response";
 export class UserTest {
     private static readonly token: string = "test-token";
     public static async deleteMany(): Promise<void> {
+        await connection.address.deleteMany();
         await connection.address.deleteMany();
         await connection.contact.deleteMany();
         await connection.user.deleteMany();
@@ -63,5 +65,29 @@ export class ContactTest {
 export class AddressTest {
     public static async remove(): Promise<void> {
         await connection.address.deleteMany({});
+    }
+    public static async create(): Promise<void> {
+        const contact: Contact | null = await ContactTest.get();
+        await connection.address.create({
+            data: {
+                contact_id  : contact!.id,
+                street      : "Cicagho",
+                city        : "Surabaya",
+                province    : "Atlantis",
+                country     : "Majapahit",
+                postal_code : "90342"
+            }
+        }) 
+    }
+    public static async get(): Promise<Address> {
+        const address: Address | null = await connection.address.findFirst({
+            where: {
+                contact: {
+                    email: "allianoanonymous@gmail.com"
+                }
+            }
+        })
+        if(!address) throw new ErrorResponse(404, "address not found");
+        return address;
     }
 }

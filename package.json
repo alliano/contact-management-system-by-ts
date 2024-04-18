@@ -4,7 +4,9 @@
   "description": "simple restfull Api with typescript",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --runInBand",
+    "build": "rm -rf ./dist && tsc --watch",
+    "start": "node --watch --trace-warnings ./dist/main.js"
   },
   "jest": {
     "transform": {
