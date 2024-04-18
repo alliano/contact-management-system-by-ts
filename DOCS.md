@@ -8,9 +8,9 @@ Request Body :
 
 ```json
 {
-  "username" : "khannedy",
-  "password" : "rahasia",
-  "name" : "Eko Khannedy"
+  "username" : "allianoanonymous@gmail.com",
+  "password" : "secreetPass",
+  "name" : "Allano"
 }
 ```
 
@@ -19,8 +19,8 @@ Response Body (Success) :
 ```json
 {
   "data" : {
-    "username" : "khannedy",
-    "name" : "Eko Khannedy"
+    "username" : "alliananonymous@gmail.com",
+    "name" : "Alliano"
   }
 }
 ```
@@ -29,7 +29,7 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors" : "Username must not blank, ..."
+  "errors" : "Username is required"
 }
 ```
 
@@ -41,8 +41,8 @@ Request Body :
 
 ```json
 {
-  "username" : "khannedy",
-  "password" : "rahasia"
+  "username" : "allianoanonymous@gmail.com",
+  "password" : "secreetPass"
 }
 ```
 
@@ -51,9 +51,9 @@ Response Body (Success) :
 ```json
 {
   "data" : {
-    "username" : "khannedy",
-    "name" : "Eko Khannedy",
-    "token" : "uuid"
+    "username" : "allianoanonymous@gmail.com",
+    "name" : "Alliano",
+    "token" : "token"
   }
 }
 ```
@@ -78,8 +78,8 @@ Response Body (Success) :
 ```json
 {
   "data" : {
-    "username" : "khannedy",
-    "name" : "Eko Khannedy"
+    "username" : "allianoanonymous@gmail.com",
+    "name" : "Alliano",
   }
 }
 ```
@@ -88,7 +88,7 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors" : "Unauthorized, ..."
+  "errors" : "Unauthorized"
 }
 ```
 
@@ -103,8 +103,8 @@ Request Body :
 
 ```json
 {
-  "password" : "rahasia", // tidak wajib
-  "name" : "Eko Khannedy" // tidak wajib
+  "password" : "secreetPass",// optional
+  "name" : "Alliano"// optional
 }
 ```
 
@@ -113,8 +113,8 @@ Response Body (Success) :
 ```json
 {
   "data" : {
-    "username" : "khannedy",
-    "name" : "Eko Khannedy"
+    "username" : "allianoanonymous@gmail.com",
+    "name" : "Alliano",
   }
 }
 ```
@@ -123,7 +123,7 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors" : "Unauthorized, ..."
+  "errors" : "Unauthorized"
 }
 ```
 
@@ -146,7 +146,7 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors" : "Unauthorized, ..."
+  "errors" : "Unauthorized"
 }
 ```
 
@@ -163,10 +163,10 @@ Request Body :
 
 ```json
 {
-  "first_name" : "Eko Kurniawan",
-  "last_name" : "Khannedy",
-  "email" : "eko@example.com",
-  "phone" : "089999999"
+  "first_name" : "Audia Naila",
+  "last_name" : "Safa",
+  "email" : "audiaalli@gmail.com",
+  "phone" : "08123345345"
 }
 ```
 
@@ -176,10 +176,10 @@ Response Body (Success) :
 {
   "data" : {
     "id" : 1,
-    "first_name" : "Eko Kurniawan",
-    "last_name" : "Khannedy",
-    "email" : "eko@example.com",
-    "phone" : "089999999"
+    "first_name" : "Audia Naila",
+    "last_name" : "Safa",
+    "email" : "audiaalli@gmail.com",
+    "phone" : "08123345345"
   }
 }
 ```
@@ -188,7 +188,7 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors" : "first_name must not blank, ..."
+  "errors" : "first_name must not blank"
 }
 ```
 
@@ -205,10 +205,10 @@ Response Body (Success) :
 {
   "data" : {
     "id" : 1,
-    "first_name" : "Eko Kurniawan",
-    "last_name" : "Khannedy",
-    "email" : "eko@example.com",
-    "phone" : "089999999"
+    "first_name" : "Audia Naila",
+    "last_name" : "Safa",
+    "email" : "audiaalli@gmail.com",
+    "phone" : "08123345345"
   }
 }
 ```
@@ -232,10 +232,10 @@ Request Body :
 
 ```json
 {
-  "first_name" : "Eko Kurniawan",
-  "last_name" : "Khannedy",
-  "email" : "eko@example.com",
-  "phone" : "089999999"
+  "first_name" : "Audia Naila",
+  "last_name" : "Safa",
+  "email" : "audiaalli@gmail.com",
+  "phone" : "08123345345"
 }
 ```
 
@@ -245,10 +245,10 @@ Response Body (Success) :
 {
   "data" : {
     "id" : 1,
-    "first_name" : "Eko Kurniawan",
-    "last_name" : "Khannedy",
-    "email" : "eko@example.com",
-    "phone" : "089999999"
+    "first_name" : "Audia Naila",
+    "last_name" : "Safa",
+    "email" : "audiaalli@gmail.com",
+    "phone" : "08123345345"
   }
 }
 ```
@@ -257,7 +257,7 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors" : "first_name must not blank, ..."
+  "errors" : "first_name must not blank"
 }
 ```
 
@@ -305,17 +305,17 @@ Response Body (Success) :
   "data" : [
     {
       "id" : 1,
-      "first_name" : "Eko Kurniawan",
-      "last_name" : "Khannedy",
-      "email" : "eko@example.com",
-      "phone" : "089999999"
+      "first_name" : "Audia Naila",
+      "last_name" : "Safa",
+      "email" : "audiaalli@gmail.com",
+      "phone" : "08123345345"
     },
     {
       "id" : 2,
-      "first_name" : "Eko Kurniawan",
-      "last_name" : "Khannedy",
-      "email" : "eko@example.com",
-      "phone" : "089999999"
+      "first_name" : "Abdillah",
+      "last_name" : "Alli",
+      "email" : "alliaudia@gmail.com",
+      "phone" : "08219938523"
     }
   ],
   "paging" : {
@@ -347,11 +347,11 @@ Request Body :
 
 ```json
 {
-  "street" : "Jalan Apa",
-  "city" : "Kota Apa",
-  "province" : "Provinsi Apa",
-  "country" : "Negara Apa",
-  "postal_code" : "23123"
+  "street" : "Al-Kausar",
+  "city" : "Atlantis",
+  "province" : "Majapahit",
+  "country" : "Majapahit",
+  "postal_code" : "2123"
 }
 ```
 
@@ -361,11 +361,11 @@ Response Body (Success) :
 {
   "data" : {
     "id" : 1,
-    "street" : "Jalan Apa",
-    "city" : "Kota Apa",
-    "province" : "Provinsi Apa",
-    "country" : "Negara Apa",
-    "postal_code" : "23123"
+    "street" : "Al-Kausar",
+    "city" : "Atlantis",
+    "province" : "Majapahit",
+    "country" : "Majapahit",
+    "postal_code" : "2123"
   }
 }
 ```
@@ -391,11 +391,11 @@ Response Body (Success) :
 {
   "data" : {
     "id" : 1,
-    "street" : "Jalan Apa",
-    "city" : "Kota Apa",
-    "province" : "Provinsi Apa",
-    "country" : "Negara Apa",
-    "postal_code" : "23123"
+    "street" : "Al-Kausar",
+    "city" : "Atlantis",
+    "province" : "Majapahit",
+    "country" : "Majapahit",
+    "postal_code" : "2123"
   }
 }
 ```
@@ -419,11 +419,11 @@ Request Body :
 
 ```json
 {
-  "street" : "Jalan Apa",
-  "city" : "Kota Apa",
-  "province" : "Provinsi Apa",
-  "country" : "Negara Apa",
-  "postal_code" : "23123"
+  "street" : "Al-Kausar",
+  "city" : "ANCHOR WAT",
+  "province" : "Majapahit",
+  "country" : "Majapahit",
+  "postal_code" : "2123"
 }
 ```
 
@@ -433,11 +433,11 @@ Response Body (Success) :
 {
   "data" : {
     "id" : 1,
-    "street" : "Jalan Apa",
-    "city" : "Kota Apa",
-    "province" : "Provinsi Apa",
-    "country" : "Negara Apa",
-    "postal_code" : "23123"
+    "street" : "Al-Kausar",
+    "city" : "ANCHOR WAT",
+    "province" : "Majapahit",
+    "country" : "Majapahit",
+    "postal_code" : "2123"
   }
 }
 ```
@@ -487,19 +487,19 @@ Response Body (Success) :
   "data" : [
     {
       "id" : 1,
-      "street" : "Jalan Apa",
-      "city" : "Kota Apa",
-      "province" : "Provinsi Apa",
-      "country" : "Negara Apa",
-      "postal_code" : "23123"
+      "street" : "Al-Kausar",
+      "city" : "ANCHOR WAT",
+      "province" : "Majapahit",
+      "country" : "Majapahit",
+      "postal_code" : "2123"
     },
     {
       "id" : 2,
-      "street" : "Jalan Apa",
-      "city" : "Kota Apa",
-      "province" : "Provinsi Apa",
-      "country" : "Negara Apa",
-      "postal_code" : "23123"
+      "street" : "Al-Kausar",
+      "city" : "ANCHOR WAT",
+      "province" : "Majapahit",
+      "country" : "Majapahit",
+      "postal_code" : "2123"
     }
   ]
 }
